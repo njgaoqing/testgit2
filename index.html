@@ -1,0 +1,1389 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,minimum-scale=1,user-scalable=no" />
+    <title>江苏豪蓓特食品有限公司</title>
+    <meta name="description" content="江苏豪蓓特食品有限公司-我国食品添加剂复配企业" />
+    <meta name="keywords" content="豪蓓特,江苏豪蓓特,江苏豪蓓特食品有限公司,hbt,howbetter,HOWBETTER,食品添加剂,食品化工" />
+
+    <link href="./css/bootstrap.min.css" type="text/css" rel="stylesheet" />
+    <link href="./css/style.min.css" type="text/css" rel="stylesheet" />
+    <link href="./css/startcom.css" type="text/css" rel="stylesheet" />
+    <link href="./css/index.min.css" type="text/css" rel="stylesheet" />
+    <link href="./css/mislider.css" rel="stylesheet">
+    <link href="./css/mislider-skin-cameo.css" rel="stylesheet">
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+         <script src="http://apps.bdimg.com/libs/html5shiv/3.7/html5shiv.min.js"></script>
+         <script src="http://apps.bdimg.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <!--手机背景 图片切换 js -->
+    <!--[if !IE]> -->
+    <script type="text/javascript" src="./lib/jquery-1.11.3.min.js"></script>
+    <!-- <![endif]-->
+    <!--IE8只能支持jQuery1.9-->
+    <!--[if lte IE 8]>
+        <script src="http://cdn.bootcss.com/jquery/1.9.1/jquery.min.js"></script>
+    <![endif]-->
+    <!--[if gt IE 8]>
+         <script type="text/javascript" src="./lib/jquery-1.11.3.min.js"></script>
+    <![endif]-->
+    <script type="text/javascript" src="./lib/jquery.touchSlider.js"></script>
+    <script src="./lib/script-about.js" type="text/javascript"></script>
+    <!--pc端图片切换js-->
+    <script type="text/javascript">
+        $(document).ready(function() {
+            $dragBln = false;
+            $(".team_main_image").touchSlider({
+                flexible: true,
+                speed: 200,
+                btn_prev: $("#btn_prev"),
+                btn_next: $("#btn_next"),
+                paging: $(".flicking_con .item-text"),
+                counter: function(e) {
+                    $(".flicking_con .item-text").removeClass("on").eq(e.current - 1).addClass("on");
+                }
+            });
+
+            $(".team_main_image").bind("mousedown", function() {
+                $dragBln = false;
+            });
+
+            $(".team_main_image").bind("dragstart", function() {
+                $dragBln = true;
+            });
+
+            $(".team_main_image a").click(function() {
+                if ($dragBln) {
+                    return false;
+                }
+            });
+
+            timer = setInterval(function() {
+                $("#btn_next").click();
+            }, 5000);
+
+            $(".main_visual").hover(function() {
+                clearInterval(timer);
+            }, function() {
+                timer = setInterval(function() {
+                    $("#btn_next").click();
+                }, 5000);
+            });
+
+            $(".team_main_image").bind("touchstart", function() {
+                clearInterval(timer);
+            }).bind("touchend", function() {
+                timer = setInterval(function() {
+                    $("#btn_next").click();
+                }, 5000);
+            });
+
+        });
+    </script>
+    <!-- 有手机背景的js end -->
+    <style type="text/css">
+        .team_main_image {
+            overflow: hidden;
+            min-height: 187px;
+        }
+        
+        @media (max-width: 435px) {
+            .team_main_image {
+                min-height: 226px;
+            }
+        }
+        
+        @media only screen and (min-width:440px) and (max-width: 768px) {
+            .team_main_image {
+                min-height: 398px;
+            }
+        }
+        
+        @media only screen and (min-width:320px) and (max-width: 411px) {
+            .team_main_image {
+                min-height: 185px;
+            }
+        }
+        
+        @media (device-width: 320px) {
+            .team_main_image {
+                min-height: 166px;
+            }
+        }
+        
+        @media (device-width: 411px) {
+            .team_main_image {
+                min-height: 213px;
+            }
+        }
+        
+        @media (device-width: 412px) {
+            .team_main_image {
+                min-height: 213px;
+            }
+        }
+        
+        @media (device-width: 600px) {
+            .team_main_image {
+                min-height: 311px;
+            }
+        }
+        
+        @media (device-height:480px) and (-webkit-min-device-pixel-ratio:2) {
+            /* 兼容iphone4/4s */
+            .team_main_image {
+                min-height: 166px;
+            }
+        }
+        
+        @media (device-height:568px) and (-webkit-min-device-pixel-ratio:2) {
+            /* 兼容iphone5 */
+            .team_main_image {
+                min-height: 166px;
+            }
+        }
+        
+        @media (device-height:667px) and (-webkit-min-device-pixel-ratio:2) {
+            /* 兼容iphone6 */
+            .team_main_image {
+                min-height: 195px;
+            }
+        }
+        
+        @media (device-height:736px) and (-webkit-min-device-pixel-ratio:2) {
+            /* 兼容iphone6 Plus */
+            .team_main_image {
+                min-height: 215px;
+            }
+        }
+        
+        .team_main_image ul li {
+            width: 100%;
+            overflow: auto;
+        }
+        
+        .team_main_visual {
+            overflow: hidden;
+            position: relative;
+            width: 100%;
+        }
+        
+        .team_textbox {
+            background-color: #60c992;
+            padding: 10px;
+        }
+        
+        .mb-inav-about li div {
+            width: 40px;
+            padding: 5px 0;
+            border-top: 2px solid #d1d1d1;
+            margin: 2px 10px 0 0;
+        }
+        
+        .mb-inav-about li div.cur {
+            background: url(./images/switch.png) no-repeat top center;
+            background-repeat: no-repeat;
+            width: 40px;
+            border: none;
+            height: 8px;
+            background-color: transparent;
+            margin-top: -3px;
+        }
+        
+        .item-li {
+            transition: none;
+        }
+        
+        .item-li:hover {
+            cursor: pointer;
+        }
+        
+        .mb-describe {
+            background-color: #60c992;
+            padding: 0;
+            color: #fff;
+            width: 100%;
+            overflow: hidden;
+        }
+        
+        .kePublic-rightdiv {
+            padding: 0 5%;
+            text-align: center;
+            margin-top: 27%\9;
+        }
+        
+        .kePublic-rightdiv .text-small {
+            font-size: 14px;
+        }
+        
+        @media only screen and (max-width: 992px) and (min-width: 768px) {
+            .kePublic-rightdiv {
+                padding: 0;
+            }
+        }
+        
+        .tuandui-title {
+            font-size: 20px;
+            margin: 9% 0 5%;
+        }
+        
+        .kePublic-cont-info {
+            font-size: 16px;
+            color: rgba(255, 255, 255, .8);
+        }
+        
+        .jiankangguwen-ico {
+            background-repeat: no-repeat;
+            background-image: url("./images/jiankangguwen-ico.png");
+            background-size: 64px 64px;
+            height: 64px;
+            width: 64px;
+            margin: auto;
+        }
+        
+        .xietiaozhuanyuan-ico {
+            background-repeat: no-repeat;
+            background-image: url("./images/xietiaozhuanyuan-ico.png");
+            background-size: 64px 64px;
+            height: 64px;
+            width: 64px;
+            margin: auto;
+        }
+        
+        .jiatingyisheng-ico {
+            background-repeat: no-repeat;
+            background-image: url("./images/jiatingyisheng-ico.png");
+            background-size: 64px 64px;
+            height: 64px;
+            width: 64px;
+            margin: auto;
+        }
+        
+        .tuhuandaifu-ico {
+            background-repeat: no-repeat;
+            background-image: url("./images/tuhuandaifu-ico.png");
+            background-size: 64px 64px;
+            height: 64px;
+            width: 64px;
+            margin: auto;
+        }
+        
+        .mb-news {
+            padding: 0 15px;
+            line-height: 1.8;
+            position: absolute;
+            left: 417px;
+            top: 150px;
+        }
+        
+        .mb-news h4 {
+            word-break: break-all;
+            word-wrap: break-word;
+        }
+        
+        .mb-news h4 a {
+            font-size: 18px;
+            color: #8c3608;
+            line-height: 1.6;
+            word-break: break-all;
+            word-wrap: break-word;
+        }
+        
+        .mb-news p {
+            font-size: 14px;
+            color: #444;
+            margin-top: 15px;
+            overflow: hidden;
+        }
+        
+        .mb-news h4 a:hover {
+            text-decoration: underline;
+        }
+        
+        .mb-img {
+            width: 100%;
+            position: relative;
+        }
+        
+        .mb-ibox {
+            width: 100%;
+            overflow: hidden;
+            z-index: 1;
+        }
+        
+        .mb-ibox a {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            z-index: 5;
+            left: 0;
+            top: 0;
+            display: block;
+        }
+        
+        .mb-ibox a:first-child {
+            z-index: 6;
+        }
+        
+        .mb-ibox a.move {
+            z-index: 7;
+        }
+        
+        .mb-ibox a.cur {
+            z-index: 8;
+            position: relative;
+        }
+        
+        .mb-inav-about {
+            z-index: 10 !important;
+            width: 210px;
+            overflow: hidden;
+            margin: 0 auto;
+            margin-top: 4.5%;
+            padding-top: 4px;
+        }
+        
+        .mb-inav-about li {
+            float: left;
+        }
+        
+        div.flicking_con {
+            text-align: center;
+            margin: 0 0 0 0;
+            left: 0;
+            width: 100%;
+            height: 160px;
+        }
+        
+        div.flicking_con .item-text {
+            padding: 0;
+            display: none;
+            color: #fff;
+        }
+        
+        div.flicking_con .item-text h4 {
+            color: #fff;
+            width: 100%;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            margin-bottom: 10px;
+        }
+        
+        .team_main_visual .flicking_con div.on {
+            display: block;
+        }
+        
+        .kePublic-cont-text {
+            font-size: 12px;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            display: -webkit-box;
+            -webkit-line-clamp: 5;
+            -webkit-box-orient: vertical;
+            word-wrap: break-word;
+            padding: 0 10px;
+        }
+        
+        .delay_1 {
+            -webkit-animation-delay: 200ms;
+            -o-animation-delay: 200ms;
+            animation-delay: 200ms;
+        }
+        
+        .delay_2 {
+            -webkit-animation-delay: 400ms;
+            -o-animation-delay: 400ms;
+            animation-delay: 400ms;
+        }
+        
+        .delay_3 {
+            -webkit-animation-delay: 600ms;
+            -o-animation-delay: 600ms;
+            animation-delay: 600ms;
+        }
+        
+        .animateUpDown {
+            -webkit-animation-name: animateUpDown;
+            -o-animation-name: animateUpDown;
+            animation-name: animateUpDown;
+            -webkit-animation-duration: 900ms;
+            -o-animation-duration: 900ms;
+            animation-duration: 900ms;
+        }
+        
+        @-webkit-keyframes animateUpDown {
+            0% {
+                opacity: 0;
+                -webkit-transform: translateY(100%);
+                transform: translateY(100%);
+            }
+            40% {
+                -webkit-transform: translateY(-20%);
+                transform: translateY(-20%);
+            }
+            100% {
+                opacity: 1;
+                -webkit-transform: translateY(0%);
+                transform: translateY(0%);
+            }
+        }
+        
+        @-o-keyframes animateUpDown {
+            0% {
+                opacity: 0;
+                -webkit-transform: translateY(100%);
+                -o-transform: translateY(100%);
+                transform: translateY(100%);
+            }
+            40% {
+                -webkit-transform: translateY(-20%);
+                -o-transform: translateY(-20%);
+                transform: translateY(-20%);
+            }
+            100% {
+                opacity: 1;
+                -webkit-transform: translateY(0%);
+                -o-transform: translateY(0%);
+                transform: translateY(0%);
+            }
+        }
+        
+        @keyframes animateUpDown {
+            0% {
+                opacity: 0;
+                -webkit-transform: translateY(100%);
+                -o-transform: translateY(100%);
+                transform: translateY(100%);
+            }
+            40% {
+                -webkit-transform: translateY(-20%);
+                -o-transform: translateY(-20%);
+                transform: translateY(-20%);
+            }
+            100% {
+                opacity: 1;
+                -webkit-transform: translateY(0%);
+                -o-transform: translateY(0%);
+                transform: translateY(0%);
+            }
+        }
+        
+        .animateUp {
+            -webkit-animation-name: animateUp;
+            -o-animation-name: animateUp;
+            animation-name: animateUp;
+            -webkit-animation-duration: 500ms;
+            -o-animation-duration: 500ms;
+            animation-duration: 500ms;
+            -webkit-animation-timing-function: cubic-bezier(.39, .575, .565, 1);
+            -o-animation-timing-function: cubic-bezier(.39, .575, .565, 1);
+            animation-timing-function: cubic-bezier(.39, .575, .565, 1);
+        }
+        
+        @-webkit-keyframes animateUp {
+            from {
+                opacity: 0;
+                -webkit-transform: translateY(50px);
+                transform: translateY(50px);
+            }
+            to {
+                opacity: 1;
+                -webkit-transform: translateY(0%);
+                transform: translateY(0%);
+            }
+        }
+        
+        @-o-keyframes animateUp {
+            from {
+                opacity: 0;
+                -webkit-transform: translateY(50px);
+                -o-transform: translateY(50px);
+                transform: translateY(50px);
+            }
+            to {
+                opacity: 1;
+                -webkit-transform: translateY(0%);
+                -o-transform: translateY(0%);
+                transform: translateY(0%);
+            }
+        }
+        
+        @keyframes animateUp {
+            from {
+                opacity: 0;
+                -webkit-transform: translateY(50px);
+                -o-transform: translateY(50px);
+                transform: translateY(50px);
+            }
+            to {
+                opacity: 1;
+                -webkit-transform: translateY(0%);
+                -o-transform: translateY(0%);
+                transform: translateY(0%);
+            }
+        }
+        
+        .cur .ShowBgUp {
+            -webkit-animation-name: ShowBgUp;
+            -o-animation-name: ShowBgUp;
+            animation-name: ShowBgUp;
+            -webkit-animation-duration: 1400ms;
+            -o-animation-duration: 1400ms;
+            animation-duration: 1400ms;
+            -webkit-animation-timing-function: cubic-bezier(.39, .575, .565, 1);
+            -o-animation-timing-function: cubic-bezier(.39, .575, .565, 1);
+            animation-timing-function: cubic-bezier(.39, .575, .565, 1);
+        }
+        
+        @-webkit-keyframes ShowBgUp {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+        
+        @-o-keyframes ShowBgUp {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+        
+        @keyframes ShowBgUp {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+        
+        .move .ShowBgUp {
+            opacity: 1;
+            z-index: 9;
+        }
+        
+        .cur .ShowBgUp {
+            z-index: 10;
+        }
+    </style>
+    <style type="text/css">
+        /*banner css start*/
+        /* .thyj-logo-icon {
+            border-radius: 50%;
+            behavior: url(PIE.htc);
+        } */
+        
+        #banner .banner-item .banner-text>div:first-child {
+            font-size: 48px;
+        }
+        
+        #banner .banner-item em {
+            font-size: 36px;
+        }
+        
+        #banner .banner-item .banner-text>div:last-child {
+            font-size: 20px;
+        }
+        
+        #banner .banner-item:first-child .banner-img {
+            background-image: url(./images/about-us-banner-2.jpg);
+        }
+        
+        #banner .banner-item:first-child+div .banner-img {
+            background-image: url(./images/about-us-banner.jpg);
+        }
+        
+        @media (-webkit-min-device-pixel-ratio:2) {
+            #banner .banner-item:first-child .banner-img {
+                background-image: url(./images/about-us-banner-2x-2.jpg) !important;
+            }
+            #banner .banner-item:first-child+div .banner-img {
+                background-image: url(./images/about-us-banner-2x.jpg) !important;
+            }
+        }
+        
+        @media (max-width: 767px) {
+            #banner .banner-item .banner-text>div>div[data-role='entext'] {
+                padding: 0 !important;
+            }
+            #banner .banner-item .banner-text>div:first-child {
+                font-size: 24px;
+            }
+            #banner .banner-item em {
+                font-size: 20px;
+            }
+            #banner .banner-item .banner-text>div:last-child {
+                font-size: 10px;
+            }
+            #banner .banner-item:first-child .banner-img {
+                background-image: url(./images/about-us-banner-app-2.jpg) !important;
+            }
+            #banner .banner-item:first-child+div .banner-img {
+                background-image: url(./images/about-us-banner-app.jpg) !important;
+            }
+        }
+        /*banner css end*/
+        
+        .team-person {
+            position: relative;
+            margin: 0 20px;
+        }
+        
+        .slideup_info p {
+            color: #333;
+            margin-bottom: 0;
+        }
+        
+        .slideup_info {
+            color: #666;
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: 3;
+            opacity: 0;
+            width: 100%;
+            height: 100%;
+            text-align: center;
+            background-color: #fff;
+            transition: all 0.4s ease-in-out;
+        }
+        
+        .team-person.hover .slideup_info {
+            opacity: 0.9;
+        }
+        
+        .team-person>div img {
+            transition: all 0.3s;
+            cursor: pointer;
+        }
+        
+        .team-person.hover>div img {
+            transform: scale(1.02);
+            -webkit-filter: blur(4px);
+            -moz-filter: blur(4px);
+            -ms-filter: blur(4px);
+            -webkit-filter: blur(4px);
+            filter: blur(4px);
+        }
+        
+        .leader-line {
+            border-top: 1px solid #3bbe7a;
+            width: 70px;
+            margin: 25px auto;
+        }
+        
+        .slideup_info_bg {
+            border: 4px solid rgba(59, 190, 122, .7);
+            height: 100%;
+            display: -webkit-flex;
+            display: flex;
+            flex-flow: column;
+            -webkit-align-items: center;
+            align-items: center;
+            -webkit-justify-content: center;
+            justify-content: center;
+        }
+        
+        .i-item-con-div {
+            transition: all 0.4s ease-in-out;
+            padding: 3% 0;
+            background-color: rgba(255, 255, 255, .98);
+        }
+        
+        .team-person.hover .i-item-con-div {
+            opacity: 0;
+        }
+        
+        .slideup_info ul {
+            margin: 0;
+        }
+        
+        .slideup_info ul li {
+            line-height: 26px;
+        }
+        
+        @media only screen and (max-width: 767px) {
+            .col-small-12 {
+                width: 100%;
+            }
+            .team-person {
+                position: relative;
+                margin: 10px 0;
+            }
+            .itme-con {
+                padding: 15px 0;
+            }
+            .leader-line {
+                margin: 13px auto 10px;
+            }
+        }
+        
+        .banner .banner-item .banner-text>div {
+            margin-top: 18%\9;
+            /*兼容IE6 IE7 IE8*/
+        }
+        
+        .slideup_info_bg>div {
+            margin-top: 32%\9;
+            /*兼容IE6 IE7 IE8*/
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-default navbar-fixed-top u-navbar">
+        <div class="container">
+            <div class="row">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed">
+                    <span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar icon-bar1"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar icon-bar2"></span>
+                </button>
+                    <a class="navbar-brand">
+                        <figure class="ac-logo-icon pc-none"></figure>
+                        <div class="logo-pc-div app-none text-center">
+                            <img src="./images/1/hbt-logo.gif" class="logo" alt="">
+                        </div>
+                    </a>
+                </div>
+                <div class="navbar-collapse collapse navbar-right" style="height: auto;">
+                    <!-- Main navigation -->
+                    <ul class="nav navbar-nav">
+                        <li class='click'><a href="./index.html">关于我们</a>
+                            <p class='line-top'></p>
+                        </li>
+                        <li><a href="./products.html">产品展示</a></li>
+                        <li><a href="./solutions.html">创新方案</a></li>
+                        <li><a href="./news.html">公司动态</a></li>
+                        <li><a href='./contactUs.html'>联系我们</a></li>
+                        <li><a href='./join.html'>加入我们</a></li>
+                        <li>
+                            <a href="./indexEnglish.html" class="text-color3b">English</a>
+                        </li>
+                    </ul>
+                    <script type="text/javascript">
+                        window.onload = function() {
+                            var ua = navigator.userAgent;
+                            if (ua.indexOf("com.tuhuan.health") != -1 || ua.indexOf("com.tuhuanjk.thmember") != -1) {
+                                $("#downappform").addClass("hide");
+                            }
+                        }
+                    </script>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!--banner start-->
+    <link rel="stylesheet" type="text/css" href="./css/animate.min.css">
+    <link rel="stylesheet" type="text/css" href="./css/banner.min.css">
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
+
+    <div id="banner" class="banner">
+        <div class="banner-item animated" data-classin="fadeIn" data-classout="fadeOut delay10" data-time="400" data-thumb="./images/aboutus-banner2-2x-small.jpg">
+            <div class="banner-img"></div>
+            <div class="banner-text vbox box-h-center box-v-center">
+                <div class="table-cell">
+                    <div class="animated" data-classin="fadeInDown delay5 duration5" data-classout="fadeOutUp delay duration5">
+                        一切工作统一按需求者满意去设计、运作......
+                    </div>
+                    <div class="animated" data-role="entext" data-classin="fadeInUp delay7 duration5" data-classout="fadeOutDown delay duration5" style="margin-top:2%">
+                        All work should unified according to demander's satisfaction to design, operate......
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="banner-item animated" data-classin="fadeIn" data-classout="fadeOut delay10" data-time="400" data-thumb="./images/aboutus-banner1-2x-small.jpg">
+            <div class="banner-img"></div>
+            <div class="banner-text vbox box-h-center box-v-center">
+                <div class="table-cell">
+                    <div class="animated" data-classin="fadeInDown delay5 duration5" data-classout="fadeOutUp delay duration5">
+                        <p>优质质构剂使您的产品更松软</p>
+                        <p>优质质构剂使您的产品更细滑</p>
+                        <p>优质质构剂使您的产品更稳定</p>
+                    </div>
+                    <div data-role="entext" class="animated" data-classin="fadeInUp delay7 duration5" data-classout="fadeOutDown delay duration5" style="margin-top:5%">
+                        <p>Superior texture stabilizer makes your products softer</p>
+                        <p>Superior texture stabilizer makes your products smoother</p>
+                        <p>Superior texture stabilizer makes your products more stable</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="banner-tool">
+        </div>
+        <div class="banner-prev">
+        </div>
+        <div class="banner-next">
+        </div>
+    </div>
+
+    <script type="text/javascript" src="./lib/banner.js"></script>
+    <script type="text/javascript">
+        $("#banner").THBanner();
+    </script>
+    <!--banner end-->
+
+    <div class="container linian-con">
+        <div class="title-comm">
+            <h3 class="welinain">企业简介</h3>
+            <p class="line"></p>
+            <p class="linh25">江苏豪蓓特食品有限公司创始于1998年。</p>
+            <p class="linh25">通过对食品质构、预混料技术研究、向乳品、饮料、烘焙、冰品、餐饮的制造商提供产品解决方案和销售食品添加剂。</p>
+            <p class="linh25">
+                企业通过ISO 9001-2015管理体系认证，FSSC 22000体系认证，清真认证资质，设备过敏原清洁认证，并成为江苏省食药局电子追溯试点单位。
+            </p>
+        </div>
+        <div class="row linian-div">
+            <div class="col-lg-4  large-3 small-12">
+                <div class="col-div">
+                    <figure class="pu-logo-icon ac-figure-icon"></figure>
+                    <h4>企业价值观</h4>
+                    <div class="f12 text-white">安全、守法、诚信、尊重</div>
+                </div>
+            </div>
+            <!-- /.col-lg-4 -->
+
+            <div class="col-lg-4  large-3 small-12">
+                <div class="col-div">
+                    <figure class="chuanxin-logo-icon ac-figure-icon"></figure>
+                    <h4>企业使命</h4>
+                    <div class="f12 text-white">努力成为中国食品质构技术第一品牌</div>
+                </div>
+            </div>
+            <!-- /.col-lg-4 -->
+
+            <div class="col-lg-4  large-3 small-12">
+                <div class="col-div">
+                    <figure class="chonggou-logo-icon ac-figure-icon"></figure>
+                    <h4>研发理念</h4>
+                    <div class="f12 text-white">以满足消费者安全、美味、健康需求为宗旨，设计业务，研发产品，鼓励原创。</div>
+                </div>
+            </div>
+            <!-- /.col-lg-4 -->
+        </div>
+        <div class="row">
+            <div class="col-lg-4  large-3 small-12">
+            </div>
+            <div class="col-lg-4  large-3 small-12">
+            </div>
+            <div class="col-lg-4  large-3 small-12">
+            </div>
+        </div>
+    </div>
+
+    <!--安全-->
+
+    <div class="container">
+        <div class="title-comm">
+            <h3 class="welinain">企业风采</h3>
+            <p class="line"></p>
+            <p>拥有2100平方米、空气净化指数达10万级的GMP生产车间的国内先进的制造基地。</p>
+            <p>现有乳品实验室、饮料试验室、烘焙实验室、冰激凌实验室等。</p>
+            <p class="linh25">研究食品质构技术及在液态奶、植物蛋白饮料中应用20年。研究多种包衣涂层技术，包括淀粉包衣、热涂糖果包衣、冷涂糖衣包衣、 巧克力包衣、薄膜包衣等。
+            </p>
+        </div>
+        <div class="row">
+            <div style="position:relative;">
+                <table class="table-gc" style="display: none">
+                    <tr>
+                        <td><img src="./images/gc-1.jpg" class="img-responsive"></td>
+                        <td><img src="./images/gc-2.jpg" class="img-responsive"></td>
+                    </tr>
+                    <tr>
+                        <td><img src="./images/gc-3.jpg" class="img-responsive"></td>
+                        <td><img src="./images/gc-4.jpg" class="img-responsive"></td>
+                    </tr>
+                </table>
+                <div class="vbox box-h-center box-v-center" style="width: 100%; height: 100%; position: absolute; top: 0; display: none">
+                    <div class="original-shape" style="display: none">企业风采</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="foryou-center-row">
+                <div class="col-xs-6 col-sm-3">
+                    <div class="foryou-center">
+                        <img src="./images/gc-1.jpg" class="img-responsive">
+                        <p class="biaoti">豪蓓特工厂外景</p>
+                        <p class="line">line</p>
+                    </div>
+                </div>
+                <div class="col-xs-6 col-sm-3">
+                    <div class="foryou-center">
+                        <img src="./images/gc-4.jpg" class="img-responsive">
+                        <p class="biaoti">豪蓓特工厂内景</p>
+                        <p class="line">line</p>
+                    </div>
+                </div>
+                <div class="clearfix visible-xs-block"></div>
+                <div class="col-xs-6 col-sm-3">
+                    <div class="foryou-center">
+                        <img src="./images/gc-2.jpg" class="img-responsive">
+                        <p class="biaoti">UHT中试线</p>
+                        <p class="line">line</p>
+                    </div>
+                </div>
+                <div class="col-xs-6 col-sm-3">
+                    <div class="foryou-center">
+                        <img src="./images/gc-3.jpg" class="img-responsive">
+                        <p class="biaoti">稳定性分析仪</p>
+                        <p class="line">line</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="title-comm">
+            <h3 class="welinain">产品展示</h3>
+            <p class="line"></p>
+            <p>复配食品添加剂（复合乳化稳定剂，复合营养强化剂，复合天然防腐剂，复配天然甜味剂)</p>
+            <p class="linh25">食品配料（魅粒坚果颗粒、魅粒沙司、预拌粉）等</p>
+        </div>
+        <div class="row">
+            <div class="app-none" style="position:relative;">
+                <div class="mb-describe hbox box-v-center">
+                    <div class="col-md-8" style="padding:0">
+                        <div id="mb-ibox" class="mb-ibox ">
+                            <a class="cur" href="products/zg.html">
+                                <div class=" animated ShowBgUp"><img src=./images/zhuanshuguwen.jpg class="img-responsive"></div>
+                            </a>
+                            <a href="products/mljg.html">
+                                <div class=" animated ShowBgUp"><img src=./images/jiatingyisheng.jpg class="img-responsive"></div>
+                            </a>
+                            <a href="products/mltwl.html">
+                                <div class=" animated ShowBgUp"><img src=./images/xietiaozhuanyuan.jpg class="img-responsive"></div>
+                            </a>
+                            <a href="products/mlybf.html">
+                                <div class=" animated ShowBgUp"><img src=./images/tuhuandaifu.jpg class="img-responsive"></div>
+                            </a>
+                        </div>
+                    </div>
+                    <div id="mb-itxt" class="col-md-4">
+                        <div style="display: block;" class="slide-itxt">
+                            <div class="kePublic-rightdiv">
+                                <div class="tuandui-title">
+                                    <div class="animated animateUp delay_2">复配食品添加剂</div>
+                                </div>
+                                <div class="kePublic-cont-info animated animateUp delay_3">
+                                    <p>复合乳化稳定剂</p>
+                                    <p>复合营养强化剂</p>
+                                    <p>复合天然防腐剂</p>
+                                    <p>复配天然甜味剂</p>
+                                    <p class="mart30"><a href="products/zg.html" class="link-desc">查看详情</a></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div style="display: none;" class="slide-itxt">
+                            <div class="kePublic-rightdiv">
+                                <div class="tuandui-title">
+                                    <div class="animated animateUp delay_2">魅粒坚果系列</div>
+                                </div>
+                                <div class="kePublic-cont-info animated animateUp delay_3">
+                                    <p>坚果魅粒<br> <span style="font-size: 12px">(裹衣花生碎、裹衣扁桃仁碎、裹衣腰果碎、裹衣花生碎（含黑芝麻）、裹衣榛子碎)</span></p>
+                                    <p>燕麦魅粒</p>
+                                    <p>复合燕麦魅粒</p>
+                                    <p class="mart30"><a href="products/mljg.html" class="link-desc">查看详情</a></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div style="display: none;" class="slide-itxt">
+                            <div class="kePublic-rightdiv">
+                                <div class="tuandui-title">
+                                    <div class="animated animateUp delay_2">魅粒沙司</div>
+                                </div>
+                                <div class="kePublic-cont-info animated animateUp delay_3">
+                                    <p>朗姆味葡萄干调味料（含葡萄干）</p>
+                                    <p>朗姆味葡萄味糖浆（不含葡萄干）</p>
+                                    <p>提拉米苏调味糖浆</p>
+                                    <p>巧克力坚果酱（含坚果颗粒）</p>
+                                    <p class="mart30"><a href="products/mltwl.html" class="link-desc">查看详情</a></p>
+                                </div>
+                            </div>
+                        </div>
+                        <div style="display: none;" class="slide-itxt">
+                            <div class="kePublic-rightdiv">
+                                <div class="tuandui-title">
+                                    <div class="animated animateUp delay_2">预拌粉</div>
+                                </div>
+                                <div class="kePublic-cont-info animated animateUp delay_3">
+                                    <p>软冰淇淋预拌粉、家用手打冰淇淋预拌粉</p>
+                                    <p>布丁粉、慕斯粉、奶茶粉</p>
+                                    <p class="mart30"><a href="products/mlybf.html" class="link-desc">查看详情</a></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <ul id="mb-inav" class="mb-inav-about ">
+                    <li>
+                        <div class="item-li cur">
+                        </div>
+                    </li>
+                    <li>
+                        <div class="item-li">
+                        </div>
+                    </li>
+                    <li>
+                        <div class="item-li">
+                        </div>
+                    </li>
+                    <li>
+                        <div class="item-li">
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <!--手机端开始-->
+            <div class="team_main_visual pc-none">
+                <div class="team_main_image">
+                    <ul style="width:100% !important;">
+                        <li>
+                            <a href="products/zg.html"><img src=./images/zhuanshuguwen.jpg class="img-responsive"></a>
+                        </li>
+                        <li>
+                            <a href="products/mljg.html"><img src=./images/xietiaozhuanyuan.jpg class="img-responsive"></a>
+                        </li>
+                        <li>
+                            <a href="products/mltwl.html"><img src=./images/jiatingyisheng.jpg class="img-responsive"></a>
+                        </li>
+                        <li>
+                            <a href="products/mlybf.html"><img src=./images/tuhuandaifu.jpg class="img-responsive"></a>
+                        </li>
+                    </ul>
+                    <a id="btn_prev"></a>
+                    <a id="btn_next"></a>
+                </div>
+                <div class="flicking_con team_textbox vbox box-v-center">
+                    <div class="item-text on">
+                        <h4>复配食品添加剂</h4>
+                        <div class="kePublic-cont-text">
+                            <p>复合乳化稳定剂</p>
+                            <p>复合营养强化剂</p>
+                            <p>复合天然防腐剂</p>
+                            <p>复配天然甜味剂</p>
+                            <p><a href="products/zg.html" class="link-desc hide">查看详情</a></p>
+                        </div>
+                    </div>
+                    <div class="item-text">
+                        <h4>魅粒坚果系列</h4>
+                        <div class="kePublic-cont-text">
+                            <p>坚果魅粒<br> <span style="font-size: 12px">(裹衣花生碎、裹衣扁桃仁碎、裹衣腰果碎、裹衣花生碎（含黑芝麻）、裹衣榛子碎)</span></p>
+                            <p>燕麦魅粒</p>
+                            <p>复合燕麦魅粒</p>
+                            <p><a href="products/mljg.html" class="link-desc hide">查看详情</a></p>
+                        </div>
+                    </div>
+                    <div class="item-text">
+                        <h4>魅粒沙司</h4>
+                        <div class="kePublic-cont-text">
+                            <p>朗姆味葡萄干调味料（含葡萄干）</p>
+                            <p>朗姆味葡萄味糖浆（不含葡萄干）</p>
+                            <p>提拉米苏调味糖浆</p>
+                            <p>巧克力坚果酱（含坚果颗粒）</p>
+                            <p><a href="products/mltwl.html" class="link-desc hide">查看详情</a></p>
+                        </div>
+                    </div>
+                    <div class="item-text">
+                        <h4>预拌粉</h4>
+                        <div class="kePublic-cont-text">
+                            <p>软冰淇淋预拌粉、家用手打冰淇淋预拌粉</p>
+                            <p>布丁粉、慕斯粉、奶茶粉</p>
+                            <p><a href="products/mlybf.html" class="link-desc hide">查看详情</a></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--手机端结束-->
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="title-comm">
+            <h3 class="welinain">创新方案</h3>
+            <p class="line"></p>
+        </div>
+    </div>
+    <div class="i-item-con itme-con">
+        <div class="container">
+            <div class="row">
+                <div id="wrapper">
+                    <figure style="position: relative">
+                        <div class="mis-stage">
+                            <ol class="mis-slider">
+                                <li class="mis-slide">
+                                    <a class="mis-container" href="solutions/mx.html">
+                                        <figure>
+                                            <img src="./images/mx.jpg" alt="Pink Water Lillies">
+                                            <figcaption>
+                                                <p>慕享*</p>
+                                                <div>-- 芒果酸奶慕斯</div>
+                                            </figcaption>
+                                        </figure>
+                                    </a>
+                                </li>
+                                <li class="mis-slide">
+                                    <a class="mis-container" href="solutions/gh.html">
+                                        <figure>
+                                            <img src="./images/blyg.jpg" alt="Pond with Lillies">
+                                            <figcaption>
+                                                <p>布朗优格</p>
+                                                <div>-- 桂花养胃褐酸奶</div>
+                                            </figcaption>
+                                        </figure>
+                                    </a>
+                                </li>
+                                <li class="mis-slide">
+                                    <a class="mis-container" href="solutions/jg.html">
+                                        <figure>
+                                            <img src="./images/jgqy.jpg" alt="Hidden Pond">
+                                            <figcaption>
+                                                <p>坚果奇缘</p>
+                                                <div>-- 巴坦木&瓜子乳</div>
+                                            </figcaption>
+                                        </figure>
+                                    </a>
+                                </li>
+                                <li class="mis-slide">
+                                    <a class="mis-container" href="solutions/kf.html">
+                                        <figure>
+                                            <img src="./images/kfxk.jpg" alt="Shrine">
+                                            <figcaption>
+                                                <p>咖啡谐客</p>
+                                                <div>-- 咖啡奶昔</div>
+                                            </figcaption>
+                                        </figure>
+                                    </a>
+                                </li>
+                                <li class="mis-slide">
+                                    <a class="mis-container" href="solutions/xf.html">
+                                        <figure>
+                                            <img src="./images/zhxf.jpg" alt="White Water Lillies">
+                                            <figcaption>
+                                                <p>甄活炫风*</p>
+                                                <div>-- 软冰淇淋奶酱</div>
+                                            </figcaption>
+                                        </figure>
+                                    </a>
+                                </li>
+                                <li class="mis-slide">
+                                    <a class="mis-container" href="solutions/sd.html">
+                                        <figure>
+                                            <img src="./images/sd.jpg" alt="Shrine">
+                                            <figcaption>
+                                                <p>善待</p>
+                                                <div>-- 全营养牛奶</div>
+                                            </figcaption>
+                                        </figure>
+                                    </a>
+                                </li>
+                                <li class="mis-slide">
+                                    <a class="mis-container" href="solutions/mk.html">
+                                        <figure>
+                                            <img src="./images/shmk.jpg" alt="White Water Lillies">
+                                            <figcaption>
+                                                <p>丝滑摩卡</p>
+                                                <div>-- 咖啡 饮料</div>
+                                            </figcaption>
+                                        </figure>
+                                    </a>
+                                </li>
+                            </ol>
+                        </div>
+                    </figure>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="title-comm">
+            <h3 class="welinain">豪蓓特的信念</h3>
+            <p class="line"></p>
+            <p class="mtop40">为非凡的口味创新</p>
+        </div>
+    </div>
+
+    <div class=" app-none">
+        <div style="background: url(./images/about-yuanjing.jpg) 50% 0%; height: 420px;">
+            <div class="container">
+                <div class="row">
+                    <div class="tuhuanyuanjing" style="text-align: center; color: #e5e3e2">
+                        <div class="thyj-logo-icon text-center">
+                            <img src="images/1/hbt-logo.gif" class="img-center" alt="">
+                        </div>
+                        <p class="text-white">我们将不断开发以便我们的产品能满足全球客户的需要</p>
+                        <p class="text-white">做一流的产品质量，为客户提供一流的服务</p>
+                        <p class="text-white">努力成为中国食品质构技术第一品牌</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="pc-none">
+        <div class="hbox box-v-center" style="background-image: url(./images/about-yuanjing.jpg);  background-size: cover !important;z-index: 0; background-position: 50% 50% !important;    height: 260px !important;">
+            <div class="container">
+                <div class="row">
+                    <div class="tuhuanyuanjing-app text-center">
+                        <figure class="thyj-logo-icon">
+                            <img src="images/1/hbt-logo.gif" class="img-center" alt="">
+                        </figure>
+                        <p class="text-white">我们将不断开发以便我们的产品能满足全球客户的需要</p>
+                        <p class="text-white">做一流的产品质量，为客户提供一流的服务</p>
+                        <p class="text-white">努力成为中国食品质构技术第一品牌</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="lightboxOverlay" class="lightboxOverlay" style="display: none;"></div>
+
+    <!-- footer begin -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="ac-gf-footer-legal">
+                    <div class="footer-beizhu">Copyright &copy; 2016 江苏豪蓓特食品有限公司 <a href="http://www.miitbeian.gov.cn/">苏ICP备05084623号</a></div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <div class="footer_app" style="display: none;">Copyright &copy; 2016 江苏豪蓓特食品有限公司</div>
+    <!-- footer end -->
+    <!-- 弹出微信框  /-->
+
+    <style type="text/css">
+        .bg-div {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, .5);
+            z-index: 50;
+        }
+        
+        .body-static {
+            overflow: hidden !important;
+        }
+        
+        .bg-div.hide {
+            display: none;
+        }
+    </style>
+    <div class="bg-div hide">
+
+    </div>
+    <!--底部蒙层end-->
+    <script type="text/javascript">
+        $(function() {
+            $(".navbar-toggle").click(function() {
+                $(this).toggleClass("click");
+                $(".bg-div").toggleClass("hide");
+                $("body").toggleClass("body-static");
+                $(".navbar-form a").toggleClass("active");
+                $(".navbar-collapse").slideToggle();
+            });
+            $(".bg-div").click(function() {
+                $(".navbar-toggle").trigger("click");
+            });
+
+            var top = ($(window).height() - $(".modal-content").height()) / 2;
+            $(".model-down").click(function() {
+                $(".modal-content").css({
+                    position: 'absolute',
+                    'top': top
+                });
+            });
+            $(".model-down-1").click(function() {
+                $(".modal-content").css({
+                    position: 'absolute',
+                    'top': top
+                });
+            });
+
+            $(".weixin-logo-icon").mouseleave(function() {
+                $(this).prev().find(".popover").removeClass("hover");
+            }).mouseenter(function() {
+                $(this).prev().find(".popover").addClass("hover");
+            });
+            $(".shouji-logo-icon").mouseleave(function() {
+                $(this).prev().find(".popover").removeClass("hover");
+            }).mouseenter(function() {
+                $(this).prev().find(".popover").addClass("hover");
+            });
+
+            var navAgent = navigator.userAgent.toLowerCase();
+            if (navAgent.indexOf("thjk-app-ios") > -1 || navAgent.indexOf("thdoctor-app-ios") > -1 || navAgent.indexOf("thjk-app-android") > -1 || navAgent.indexOf("thdoctor-app-android") > -1) {
+                $(".navbar-form.navbar-right").hide();
+                $(".nav > li:last-child a").css({
+                    "border-bottom": "0"
+                });
+            }
+            $(".navbar-nav > li.click a").removeAttr("href");
+        });
+    </script>
+    <link href="./css/theme-cobalt.css" rel="stylesheet" type="text/css" media="all">
+    <script src="./lib/jquery.flexslider-min.js"></script>
+    <script src="./lib/smooth-scroll.min.js"></script>
+    <script src="./lib/skrollr.min.js"></script>
+    <script src="./lib/scrollReveal.min.js"></script>
+    <script src="./lib/isotope.min.js"></script>
+    <script src="./lib/scripts.js"></script>
+    <script type="text/javascript">
+        $(function() {
+            var itemdiv = $(".i-item-con .col-lg-4");
+            itemdiv.hover(function() {
+                $(this).addClass("item-active").siblings().removeClass("item-active");
+            }).hover(function() {}, function() {
+                $(this).removeClass("item-active");
+            });
+            var itemdiv = $(".team-person");
+            itemdiv.hover(function() {
+                $(this).addClass("hover").siblings().removeClass("hover");
+            }).hover(function() {}, function() {
+                $(this).removeClass("hover");
+            });
+        });
+    </script>
+    <script type="text/javascript" src="./lib/bootstrap.min.js"></script>
+    <script src="./lib/mislider.js"></script>
+    <script>
+        $(function($) {
+            var slider = $('.mis-stage').miSlider({
+                //  The height of the stage in px. Options: false or positive integer. false = height is calculated using maximum slide heights. Default: false
+                stageHeight: 292,
+                //  Number of slides visible at one time. Options: false or positive integer. false = Fit as many as possible.  Default: 1
+                slidesOnStage: false,
+                //  The location of the current slide on the stage. Options: 'left', 'right', 'center'. Defualt: 'left'
+                slidePosition: 'center',
+                //  The slide to start on. Options: 'beg', 'mid', 'end' or slide number starting at 1 - '1','2','3', etc. Defualt: 'beg'
+                slideStart: 'mid',
+                //  The relative percentage scaling factor of the current slide - other slides are scaled down. Options: positive number 100 or higher. 100 = No scaling. Defualt: 100
+                slideScaling: 150,
+                //  The vertical offset of the slide center as a percentage of slide height. Options:  positive or negative number. Neg value = up. Pos value = down. 0 = No offset. Default: 0
+                offsetV: -5,
+                //  Center slide contents vertically - Boolean. Default: false
+                centerV: true,
+                //  Opacity of the prev and next button navigation when not transitioning. Options: Number between 0 and 1. 0 (transparent) - 1 (opaque). Default: .5
+                navButtonsOpacity: 1
+            });
+        });
+    </script>
+</body>
+
+</html>
