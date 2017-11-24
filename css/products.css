@@ -1,0 +1,157 @@
+.marb50 {
+    margin-bottom: 50px;
+}
+
+.mart20 {
+    margin-top: 20px;
+}
+
+.product-table {
+    width: 100%;
+    max-width: 1000px;
+    margin: 10px auto;
+}
+
+.product-table tr th,
+.product-table tr td {
+    border-bottom: 2px solid #fff;
+    border-right: 2px solid #fff;
+    text-align: center;
+    padding: 10px;
+}
+
+.product-table tr th {
+    background-color: #fbd28a;
+    font-size: 16px;
+}
+
+.product-table tr td {
+    background-color: #f9f4e8;
+}
+
+.table-color2 tr th {
+    background-color: #f5dbe9;
+}
+
+.table-color3 tr th {
+    background-color: #d0df67;
+}
+
+.product-table tr th:last-child,
+.product-table tr td:last-child {
+    border-right: none;
+}
+
+.product-table tr:last-child td {
+    border-bottom: none;
+}
+
+.container.ybf {
+    max-width: 900px;
+}
+
+.products-desc .media-body li:before {
+    width: 8px;
+    height: 8px;
+    display: inline-block;
+    border-radius: 50%;
+    background-color: #555;
+    content: '';
+    margin: 0 10px;
+}
+
+.products-desc .text-title {
+    font-size: 16px;
+    color: #333;
+    padding: 8px;
+}
+
+.products-desc .media-object {
+    display: block;
+    border-radius: 50%;
+    width: 180px;
+    margin: 10px auto;
+}
+
+.ybf .media-object {
+    border-radius: 0;
+    width: 180px;
+    margin: 0 20px 0 50px;
+}
+
+.products-desc .media-heading {
+    margin-bottom: 10px;
+    padding: 8px;
+    text-align: center;
+    background: #d0df67;
+}
+
+.products-desc .media-left,
+.products-desc .media>.pull-left {
+    margin-right: 20px;
+}
+
+.products-desc .media {
+    margin-top: 50px;
+}
+
+.products-desc .media p {
+    text-indent: 2em;
+}
+
+.products-desc .media:last-child {
+    margin-bottom: 30px;
+}
+
+.products-desc .media-body {
+    margin-left: 20px;
+    font-size: 16px;
+    color: #333;
+    line-height: 1.8;
+}
+
+.products-desc ul,
+.products-desc ul li {
+    list-style: circle
+}
+
+.product2-table tr th:nth-child(1) {
+    width: 50%;
+}
+
+@media (max-width:766px) {
+    .product2-table tr th:nth-child(1) {
+        width: auto;
+    }
+    .product-table tr th {
+        background-color: #fbd28a;
+        font-size: 14px;
+    }
+    .product-table tr th,
+    .product-table tr td {
+        padding: 8px;
+    }
+    .product-table tr td {
+        font-size: 12px;
+    }
+    .products-desc .media {
+        margin-top: 30px;
+    }
+    .products-desc .media-object {
+        width: 100px;
+        margin: 0;
+    }
+    .products-desc .media-body {
+        font-size: 14px;
+    }
+    .products-desc .media-body h4 {
+        font-size: 16px;
+    }
+    .products-desc .media-left,
+    .products-desc .media>.pull-left {
+        margin-right: 0;
+    }
+    .products-desc .text-title {
+        font-size: 14px;
+    }
+}

@@ -1,0 +1,145 @@
+        body {
+            background: #fff;
+        }
+        
+        .solutions {
+            color: #333;
+            font-size: 15px;
+        }
+        
+        .mart50 {
+            margin-top: 50px;
+        }
+        
+        .marb50 {
+            margin-bottom: 50px;
+        }
+        
+        .text-desc {
+            line-height: 30px;
+            color: #333;
+            max-width: 500px;
+        }
+        
+        .text-color1 {
+            color: #ea5514;
+        }
+        
+        .text-color2 {
+            color: #00a0e9;
+        }
+        
+        .text-color3 {
+            color: #956134;
+        }
+        
+        .text-color4 {
+            color: #33bbd7;
+        }
+        
+        .text-color5 {
+            color: #ee8397;
+        }
+        
+        .marl10 {
+            margin-left: 10px;
+        }
+        
+        .solution-title {
+            font-size: 24px;
+            font-weight: bold;
+            margin: 50px 0 20px;
+        }
+        
+        .solution-title2 {
+            font-size: 24px;
+            font-weight: bold;
+            margin: 100px 0 20px;
+        }
+        
+        .sub-list {
+            margin-left: 50px;
+        }
+        
+        .sup-text {
+            vertical-align: super;
+            font-size: 10px;
+        }
+        
+        .solutions li {
+            line-height: 30px;
+        }
+        
+        .marl10 li {
+            line-height: 1.3;
+        }
+        
+        .list-style1 li:before {
+            content: '-';
+            padding-right: 10px;
+        }
+        
+        .list-style2 li:before {
+            width: 10px;
+            height: 10px;
+            display: inline-block;
+            border-radius: 5px;
+            background-color: #ea5514;
+            content: '';
+            margin: 0 10px;
+        }
+        
+        .solutions h3 {
+            font-size: 22px;
+            margin-bottom: 20px;
+        }
+        
+        .fontBold {
+            font-weight: bold;
+        }
+        
+        .solutions .verLine {
+            height: 670px;
+            width: 1px;
+            border-right: 1px solid #4c4c4c;
+        }
+        
+        .sub-title {
+            font-size: 18px;
+            color: #000;
+            line-height: 30px;
+        }
+        
+        .pr {
+            position: relative;
+        }
+        
+        .title-comm {
+            color: #666;
+        }
+        
+        @media (min-width: 1200px) {
+            .solutions .container {
+                width: 1100px;
+            }
+        }
+        
+        @media (max-width: 766px) {
+            .solutions .mart50 {
+                margin-top: 40px;
+            }
+            .solutions h3 {
+                font-size: 20px;
+                margin-bottom: 10px;
+            }
+            .solution-title,
+            .solution-title2 {
+                margin: 40px 0 10px;
+            }
+            .title-comm {
+                font-size: 14px;
+            }
+            .sub-list {
+                margin-left: 0;
+            }
+        }

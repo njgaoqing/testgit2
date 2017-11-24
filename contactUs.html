@@ -1,0 +1,407 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="format-detection" content="telephone=no">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,minimum-scale=1,user-scalable=no" />
+    <meta name="description" content="江苏豪蓓特食品有限公司-我国食品添加剂复配企业" />
+    <meta name="keywords" content="江苏豪蓓特,江苏豪蓓特食品有限公司,豪蓓特,hbt,howbetter,HOWBETTER,食品添加剂,食品化工" />
+    <title>产品展示-江苏豪蓓特食品有限公司</title>
+    <script type="text/javascript" src="./lib/jquery-3.2.1.min.js"></script>
+    <link href="./css/bootstrap.min.css" type="text/css" rel="stylesheet" />
+    <link href="./css/content.min.css" type="text/css" rel="stylesheet" />
+    <style type="text/css">
+        body {
+            position: relative;
+        }
+        
+        #allmap {
+            width: 100%;
+            height: 500px;
+        }
+        
+        p {
+            margin-left: 5px;
+            font-size: 14px;
+        }
+        
+        .BMap_mask {
+            width: 100% !important;
+            height: 100% !important;
+        }
+        
+        @media (max-width:767px) {
+            #allmap {
+                width: 100%;
+                height: 275px;
+                margin-top: 45px;
+            }
+        }
+    </style>
+    <style type="text/css">
+        .anchorBL {
+            display: none;
+        }
+    </style>
+    <script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=zYQZX9RyWj7kOZ6xXvAaIH3B32nGMuDv"></script>
+    <script type="text/javascript" src="http://api.map.baidu.com/library/AreaRestriction/1.2/src/AreaRestriction_min.js"></script>
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+         <script src="http://apps.bdimg.com/libs/html5shiv/3.7/html5shiv.min.js"></script>
+         <script src="http://apps.bdimg.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <!--手机背景 图片切换 js -->
+    <!--[if !IE]> -->
+    <script type="text/javascript" src="./lib/jquery-1.11.3.min.js"></script>
+    <!-- <![endif]-->
+    <!--IE8只能支持jQuery1.9-->
+    <!--[if lte IE 8]>
+        <script src="http://cdn.bootcss.com/jquery/1.9.1/jquery.min.js"></script>
+    <![endif]-->
+    <!--[if gt IE 8]>
+         <script type="text/javascript" src="./lib/jquery-1.11.3.min.js"></script>
+    <![endif]-->
+    <script type="text/javascript" src="./lib/jquery.touchSlider.js"></script>
+    <script src="./lib/script-about.js" type="text/javascript"></script>
+</head>
+
+<body>
+
+    <div class="tipLayer" id="tipLayer" style="display:none">
+        <p class="tipContent">提示信息</p>
+    </div>
+    <nav class="navbar navbar-default navbar-fixed-top u-navbar">
+        <div class="container">
+            <div class="row">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar icon-bar1"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar icon-bar2"></span>
+                </button>
+                    <a class="navbar-brand" href="./index.html">
+                        <figure class="ac-logo-icon pc-none"></figure>
+                        <div class="logo-pc-div app-none text-center">
+                            <img src="./images/1/hbt-logo.gif" class="logo" alt="">
+                        </div>
+                    </a>
+                </div>
+                <div class="navbar-collapse collapse navbar-right" style="height: auto;">
+                    <!-- Main navigation -->
+                    <ul class="nav navbar-nav">
+                        <li><a href="./index.html">关于我们</a></li>
+                        <li><a href="./products.html">产品展示</a></li>
+                        <li><a href="./solutions.html">创新方案</a></li>
+                        <li><a href="./news.html">公司动态</a></li>
+                        <li class='click'><a href='./contactUs.html'>联系我们</a>
+                            <p class='line-top'></p>
+                        </li>
+                        <li><a href='./join.html'>加入我们</a></li>
+                        <li>
+                            <a href="./contactUsEnglish.html" class="text-color3b">English</a>
+                        </li>
+                    </ul>
+                    <script type="text/javascript">
+                        window.onload = function() {
+                            var ua = navigator.userAgent;
+                            if (ua.indexOf("com.tuhuan.health") != -1 || ua.indexOf("com.tuhuanjk.thmember") != -1) {
+                                $("#downappform").addClass("hide");
+                            }
+                        }
+                    </script>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <div class="global">
+        <div id="allmap"></div>
+        <div class="container">
+            <div class="title-comm">
+                <h3 class="welinain">联系我们</h3>
+                <p class="line"></p>
+                <p class="linh25 f12">豪蓓特—一切工作统一按需求者满意去设计、运作......</p>
+            </div>
+            <div class="row contactus">
+                <div class="col-lg-4 large-3 small-12">
+                    <div class="tcenter contactus-item">
+                        <figure class="contact-kefu ac-figure-icon"></figure>
+                        <div>
+                            <h4>联系客服</h4>
+                            <p class="f12">电话：0086 516 83265999/83265998</p>
+                            <p class="f12">邮箱：ythbt@126.com</p>
+                            <p class="f12">工作时间：08：30~18：30（周一到周五）</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- /.col-lg-4 -->
+                <div class="col-lg-4 large-3 small-12">
+                    <div class="tcenter contactus-item">
+                        <figure class="contact-swhz ac-figure-icon"></figure>
+                        <div>
+                            <h4>商务合作</h4>
+                            <p class="f12">电话：0086 516 83265979/5999</p>
+                            <p class="f12">电子邮件：hbt_83265979@126.com</p>
+                            <p class="f12">邮编：221004</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- /.col-lg-4 -->
+                <div class="col-lg-4 large-3 small-12">
+                    <div class="tcenter contactus-item">
+                        <figure class="contact-dizhi ac-figure-icon"></figure>
+                        <div>
+                            <h4>公司地址</h4>
+                            <p class="f12">江苏徐州市民富园大道商业办公楼3楼</p>
+                            <p class="f12">工厂地址：宿迁经济开发区世纪大道335号</p>
+                            <p class="f12">传真：0086 516 83265997</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- /.col-lg-4 -->
+            </div>
+            <div class="gray-line"></div>
+            <div class="app-none">
+                <div class="title-comm">
+                    <h3 class="welinain">反馈意见</h3>
+                    <p class="line"></p>
+                    <p class="mtop40 mb8">感谢采购豪蓓特产品</p>
+                    <p class="linh25">您宝贵的建议是豪蓓特前进的动力，我们期待您的反馈和建议</p>
+                </div>
+                <div class="feedback">
+                    <div class="feedback-l">
+                        <img src="./images/pr6.gif" class="img-responsive" />
+                    </div>
+                    <div class="feedback-r">
+                        <div class="feedback-submit-con">
+                            <input type="text" id="TxtTel" class="inputdiv form-control" placeholder="请输入邮箱或电话号码，便于我们联系您" />
+                            <textarea id="TxtContent" class=" form-control" placeholder="请输入您的反馈意见"></textarea>
+                            <a href="javascript:AddFeedback()" id="btn-submit" class="global-btn" data-submit="1">提交</a>
+                            <script src="lib/util.js"></script>
+                            <script type="text/javascript">
+                                var browser = "";
+                                var system = "";
+
+                                var os = navigator.platform;
+                                var userAgent = navigator.userAgent;
+                                var tempArray = "";
+                                if (os.indexOf("Win") > -1) {
+                                    if (userAgent.indexOf("Windows NT 5.0") > -1) {
+                                        system = "Win2000";
+                                    } else if (userAgent.indexOf("Windows NT 5.1") > -1) {
+                                        system = "WinXP";
+                                    } else if (userAgent.indexOf("Windows NT 5.2") > -1) {
+                                        system = "Win2003";
+                                    } else if (userAgent.indexOf("Windows NT 6.0") > -1) {
+                                        system = "WindowsVista";
+                                    } else if (userAgent.indexOf("Windows NT 6.1") > -1 || userAgent.indexOf("Windows 7") > -1) {
+                                        system = "Win7";
+                                    } else if (userAgent.indexOf("Windows 8") > -1) {
+                                        system = "Win8";
+                                    } else {
+                                        system = "Other";
+                                    }
+                                } else if (os.indexOf("Mac") > -1) {
+                                    system = "Mac";
+                                } else if (os.indexOf("X11") > -1) {
+                                    system = "Unix";
+                                } else if (os.indexOf("Linux") > -1) {
+                                    system = "Linux";
+                                } else {
+                                    system = "Other";
+                                }
+                                if (/[Ff]irefox(\/\d+\.\d+)/.test(userAgent)) {
+                                    tempArray = /([Ff]irefox)\/(\d+\.\d+)/.exec(userAgent);
+                                    browser = tempArray[1] + tempArray[2];
+                                } else if (/MSIE \d+\.\d+/.test(userAgent)) {
+                                    tempArray = /MS(IE) (\d+\.\d+)/.exec(userAgent);
+                                    browser = tempArray[1] + tempArray[2];
+                                } else if (/[Cc]hrome\/\d+/.test(userAgent)) {
+                                    tempArray = /([Cc]hrome)\/(\d+)/.exec(userAgent);
+                                    browser = tempArray[1] + tempArray[2];
+                                } else if (/[Vv]ersion\/\d+\.\d+\.\d+(\.\d)* *[Ss]afari/.test(userAgent)) {
+                                    tempArray = /[Vv]ersion\/(\d+\.\d+\.\d+)(\.\d)* *([Ss]afari)/.exec(userAgent);
+                                    browser = tempArray[3] + tempArray[1];
+                                } else if (/[Oo]pera.+[Vv]ersion\/\d+\.\d+/.test(userAgent)) {
+                                    tempArray = /([Oo]pera).+[Vv]ersion\/(\d+)\.\d+/.exec(userAgent);
+                                    browser = tempArray[1] + tempArray[2];
+                                } else {
+                                    browser = "unknown";
+                                }
+
+                                var tipNode = $('#tipLayer');
+                                var mainTipNode = tipNode.find('p');
+
+                                function AddFeedback() {
+                                    var submitObj = $("#btn-submit");
+                                    var tip = '';
+                                    var flag = true;
+                                    var json = {};
+                                    var tel = $("#TxtTel").val();
+                                    var content = $("#TxtContent").val();
+                                    if (submitObj.attr("data-submit")) {
+                                        var tipFun = function(tipValue) {
+                                            mainTipNode.html(tipValue);
+                                            tipNode.css('display', 'block');
+                                            setTimeout(function() {
+                                                tipNode.fadeOut(1000)
+                                            }, 1000);
+                                        };
+                                        var testTel = /1\d{10}/.test(tel);
+                                        var testEmail = (/^(\w)+(\.\w+)*@(\w)+((\.\w+)+)$/.test(tel));
+
+                                        if (!testTel && !testEmail) {
+                                            tip = '请输入邮箱或电话号码';
+                                            tipFun(tip);
+                                            return;
+                                        }
+                                        if (!content) {
+                                            tip = "请填写您的反馈意见";
+                                            tipFun(tip);
+                                            return;
+                                        }
+
+                                        if (testTel) {
+                                            json.Tel = tel;
+                                        } else {
+                                            json.Mail = tel;
+                                        }
+                                        json.Type = '反馈意见';
+                                        json.ContentRemark = content;
+
+                                        $("#btn-submit").attr("data-submit", "0").text("数据提交中...");
+                                        postMsgFun(baseUrl + 'DemandFeedback', json, function(rs) {
+                                            if (rs.message == 'ok') {
+                                                tipFun('提交成功');
+                                            } else {
+                                                tipFun(rs.message);
+                                            }
+                                            $("#btn-submit").attr("data-submit", "0").text("提交");
+                                        });
+                                    }
+                                }
+                            </script>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- footer begin -->
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="ac-gf-footer-legal">
+                    <div class="footer-beizhu">Copyright &copy; 2016 江苏豪蓓特食品有限公司 <a href="http://www.miitbeian.gov.cn/">苏ICP备05084623号</a></div>
+                </div>
+                <div class="footer-weixin hide">
+                    <div class="bt-example-popover">
+                        <div class="popover top">
+                            <div class="arrow"></div>
+                            <div style="padding: 7px">
+                                <figure class="erweima-logo-icon"></figure>
+                            </div>
+                        </div>
+                    </div>
+                    <figure class="weixin-logo-icon"></figure>
+                </div>
+                <div class="footer-weixin hide">
+                    <div class="bt-example-popover">
+                        <div class="popover top">
+                            <div class="arrow"></div>
+                            <div style="padding: 7px">
+                                <figure class="erweimaapp-logo-icon"></figure>
+                            </div>
+                        </div>
+                    </div>
+                    <figure class="shouji-logo-icon"></figure>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <div class="footer_app" style="display: none;">Copyright &copy; 2016 江苏豪蓓特食品有限公司</div>
+    <!-- footer end -->
+    <div class="bg-div hide">
+
+    </div>
+    <!--底部蒙层end-->
+    <script type="text/javascript">
+        $(function() {
+            $(".navbar-toggle").click(function() {
+                $(this).toggleClass("click");
+                $(".bg-div").toggleClass("hide");
+                $("body").toggleClass("body-static");
+                $(".navbar-form a").toggleClass("active");
+                $(".navbar-collapse").slideToggle();
+            });
+            $(".bg-div").click(function() {
+                $(".navbar-toggle").trigger("click");
+            });
+
+            var top = ($(window).height() - $(".modal-content").height()) / 2;
+            $(".model-down").click(function() {
+                $(".modal-content").css({
+                    position: 'absolute',
+                    'top': top
+                });
+            });
+            $(".model-down-1").click(function() {
+                $(".modal-content").css({
+                    position: 'absolute',
+                    'top': top
+                });
+            });
+
+            $(".weixin-logo-icon").mouseleave(function() {
+                $(this).prev().find(".popover").removeClass("hover");
+            }).mouseenter(function() {
+                $(this).prev().find(".popover").addClass("hover");
+            });
+            $(".shouji-logo-icon").mouseleave(function() {
+                $(this).prev().find(".popover").removeClass("hover");
+            }).mouseenter(function() {
+                $(this).prev().find(".popover").addClass("hover");
+            });
+
+            var navAgent = navigator.userAgent.toLowerCase();
+            if (navAgent.indexOf("thjk-app-ios") > -1 || navAgent.indexOf("thdoctor-app-ios") > -1 || navAgent.indexOf("thjk-app-android") > -1 || navAgent.indexOf("thdoctor-app-android") > -1) {
+                $(".navbar-form.navbar-right").hide();
+                $(".nav > li:last-child a").css({
+                    "border-bottom": "0"
+                });
+            }
+
+            $(".navbar-nav > li.click a").removeAttr("href");
+        });
+    </script>
+    <script type="text/javascript" src="./lib/bootstrap.min.js"></script>
+    <style type="text/css">
+        img[src='images/icon2.png'] {
+            width: 50px;
+            height: 50px;
+        }
+    </style>
+</body>
+
+</html>
+<script type="text/javascript">
+    var map = new BMap.Map("allmap");
+    var point = new BMap.Point(116.331398, 39.897445);
+    map.enableScrollWheelZoom(true);
+    map.disableDragging(); //禁止拖拽
+    map.disableScrollWheelZoom();
+    map.disableDoubleClickZoom();
+    map.disablePinchToZoom();
+    // 创建地址解析器实例
+    var myGeo = new BMap.Geocoder();
+    // 将地址解析结果显示在地图上,并调整地图视野
+    myGeo.getPoint("民怡园", function(point) {
+        if (point) {
+            map.centerAndZoom(point, 16);
+            map.addOverlay(new BMap.Marker(point));
+        } else {
+            alert("您选择地址没有解析到结果!");
+        }
+    }, "徐州");
+</script>
